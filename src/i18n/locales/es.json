@@ -1,0 +1,196 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Acerca de",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Servicios Expertos de Reparación de Autos",
+    "subtitle": "Mecánicos de confianza que brindan atención automotriz de calidad durante más de 20 años",
+    "scheduleService": "Programar Servicio",
+    "ourServices": "Nuestros Servicios",
+    "whyChoose": "¿Por Qué Elegir MV Automotive?",
+    "allMakes": "Todas las Marcas y Modelos",
+    "allMakesDesc": "Servimos todos los tipos de vehículos, desde autos nacionales hasta importados",
+    "expertTech": "Técnicos Expertos",
+    "expertTechDesc": "Mecánicos certificados con años de experiencia y capacitación",
+    "fastService": "Servicio Rápido",
+    "fastServiceDesc": "Tiempos de respuesta rápidos sin comprometer la calidad",
+    "qualityGuarantee": "Garantía de Calidad",
+    "qualityGuaranteeDesc": "Respaldamos nuestro trabajo con garantías integrales",
+    "ourServicesTitle": "Nuestros Servicios",
+    "engineRepair": "Reparación de Motor",
+    "engineRepairDesc": "Diagnósticos, reparaciones y mantenimiento completos del motor para mantener su vehículo funcionando sin problemas.",
+    "brakeService": "Servicio de Frenos",
+    "brakeServiceDesc": "Inspección, reparación y reemplazo profesional de frenos para su seguridad en la carretera.",
+    "oilChanges": "Cambios de Aceite",
+    "oilChangesDesc": "Cambios de aceite regulares para extender la vida de su motor y mejorar el rendimiento.",
+    "viewAllServices": "Ver Todos los Servicios",
+    "readyToSchedule": "¿Listo para Programar Su Servicio?",
+    "contactToday": "Contáctenos hoy para una estimación gratuita",
+    "getStarted": "Comenzar"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Reparación y mantenimiento automotriz integral para todas las marcas y modelos",
+    "engineRepair": {
+      "title": "Reparación y Diagnóstico de Motor",
+      "description": "Servicios completos de diagnóstico y reparación de motor para mantener su vehículo funcionando al máximo rendimiento.",
+      "features": [
+        "Diagnóstico de motor",
+        "Reemplazo de correa de distribución",
+        "Reparación de junta de culata",
+        "Reconstrucción de motor",
+        "Servicio del sistema de refrigeración"
+      ]
+    },
+    "brakeService": {
+      "title": "Servicio y Reparación de Frenos",
+      "description": "Inspección, reparación y reemplazo profesional de frenos para garantizar su seguridad en la carretera.",
+      "features": [
+        "Reemplazo de pastillas de freno",
+        "Rectificado de rotores",
+        "Lavado de líquido de frenos",
+        "Reparación de caliper",
+        "Servicio del sistema ABS"
+      ]
+    },
+    "oilChanges": {
+      "title": "Cambios de Aceite y Servicios de Fluidos",
+      "description": "Servicios de mantenimiento regulares para extender la vida de su vehículo y mejorar el rendimiento.",
+      "features": [
+        "Cambios de aceite convencionales y sintéticos",
+        "Servicio de fluido de transmisión",
+        "Lavado de refrigerante",
+        "Fluido de dirección asistida",
+        "Servicio de diferencial"
+      ]
+    },
+    "transmission": {
+      "title": "Servicio de Transmisión",
+      "description": "Reparación y mantenimiento experto de transmisión para cambios suaves y rendimiento confiable.",
+      "features": [
+        "Reconstrucción de transmisión",
+        "Cambio y lavado de fluido",
+        "Reemplazo de embrague",
+        "Diagnóstico de transmisión",
+        "Servicio CVT"
+      ]
+    },
+    "suspension": {
+      "title": "Suspensión y Dirección",
+      "description": "Servicios completos del sistema de suspensión y dirección para un viaje suave y seguro.",
+      "features": [
+        "Reemplazo de amortiguadores y puntales",
+        "Servicio de alineación",
+        "Reemplazo de varilla de dirección",
+        "Servicio de rótula",
+        "Reparación de cremallera de dirección"
+      ]
+    },
+    "acHeating": {
+      "title": "Servicio de Aire Acondicionado y Calefacción",
+      "description": "Mantenga su vehículo cómodo durante todo el año con nuestros servicios de control climático.",
+      "features": [
+        "Recarga de aire acondicionado",
+        "Reparación de compresor",
+        "Servicio de núcleo del calentador",
+        "Diagnóstico HVAC",
+        "Reparación de fuga de refrigerante"
+      ]
+    },
+    "electrical": {
+      "title": "Reparación del Sistema Eléctrico",
+      "description": "Diagnóstico y reparación eléctrica experta para todas las necesidades eléctricas de su vehículo.",
+      "features": [
+        "Reemplazo de batería",
+        "Servicio de alternador",
+        "Reparación de arranque",
+        "Diagnóstico de cableado",
+        "Servicio de fusibles y relés"
+      ]
+    },
+    "tireService": {
+      "title": "Servicio de Llantas",
+      "description": "Servicios completos de llantas que incluyen instalación, rotación y balanceo.",
+      "features": [
+        "Instalación de llantas",
+        "Rotación de llantas",
+        "Balanceo de ruedas",
+        "Reparación de llantas",
+        "Servicio TPMS"
+      ]
+    }
+  },
+  "about": {
+    "title": "Acerca de MV Automotive",
+    "subtitle": "Su socio de confianza en cuidado automotriz en Irving, Texas desde 2003",
+    "ourStory": "Nuestra Historia",
+    "story1": "Fundada en 2003, MV Automotive ha estado sirviendo a la comunidad de Irving, Texas con dedicación y excelencia durante más de 20 años. Propiedad y operada por Mario Buenrostro, lo que comenzó como un pequeño taller familiar se ha convertido en un centro de servicio automotriz de confianza conocido por la calidad de su trabajo y servicio honesto.",
+    "owner": "Propietario",
+    "ownerName": "Mario Buenrostro",
+    "story2": "Nuestro compromiso con la satisfacción del cliente y la experiencia técnica nos ha convertido en la opción preferida para miles de propietarios de vehículos. Creemos en construir relaciones duraderas con nuestros clientes a través de comunicación transparente, precios justos y servicio confiable.",
+    "story3": "En MV Automotive, no solo arreglamos autos, los cuidamos. Cada vehículo que entra por nuestras puertas recibe la misma atención al detalle y servicio de calidad, ya sea un cambio de aceite de rutina o una reparación compleja del motor.",
+    "ourValues": "Nuestros Valores",
+    "qualityWork": "Trabajo de Calidad",
+    "qualityWorkDesc": "Usamos solo las piezas de más alta calidad y seguimos las especificaciones del fabricante para cada reparación.",
+    "experience": "Experiencia",
+    "experienceDesc": "Más de 20 años de experiencia combinada con capacitación continua en la última tecnología automotriz.",
+    "excellence": "Excelencia",
+    "excellenceDesc": "Nos esforzamos por la excelencia en cada aspecto de nuestro servicio, desde el diagnóstico hasta la comunicación con el cliente.",
+    "customerFirst": "Cliente Primero",
+    "customerFirstDesc": "Su satisfacción es nuestra prioridad. Escuchamos, nos comunicamos claramente y siempre hacemos lo correcto.",
+    "whyChoose": "¿Por Qué Elegir MV Automotive?",
+    "certifiedTech": "✓ Técnicos Certificados",
+    "certifiedTechDesc": "Todos nuestros mecánicos están certificados por ASE y reciben capacitación continua en la última tecnología automotriz.",
+    "warranty": "✓ Garantía en Todo el Trabajo",
+    "warrantyDesc": "Respaldamos nuestro trabajo con garantías integrales en piezas y mano de obra.",
+    "competitivePricing": "✓ Precios Competitivos",
+    "competitivePricingDesc": "Precios justos y transparentes sin tarifas ocultas. Proporcionamos estimaciones detalladas antes de que comience cualquier trabajo.",
+    "modernEquipment": "✓ Equipo Moderno",
+    "modernEquipmentDesc": "Equipo de diagnóstico de última generación para identificar y reparar problemas con precisión y rapidez.",
+    "convenientLocation": "✓ Ubicación Conveniente",
+    "convenientLocationDesc": "Fácil acceso con amplio estacionamiento y área de espera cómoda con WiFi gratuito.",
+    "allMakes": "✓ Todas las Marcas y Modelos",
+    "allMakesDesc": "Servimos todos los tipos de vehículos, desde nacionales hasta importados, clásicos hasta modernos."
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "subtitle": "Póngase en contacto con nuestro equipo hoy",
+    "getInTouch": "Póngase en Contacto",
+    "phone": "Teléfono",
+    "phoneHours": "Lun-Vie: 8am-6pm",
+    "email": "Correo Electrónico",
+    "emailResponse": "Responderemos dentro de 24 horas",
+    "address": "Dirección",
+    "businessHours": "Horario Comercial",
+    "mondayFriday": "Lunes - Viernes: 8:00 AM - 6:00 PM",
+    "saturday": "Sábado: 9:00 AM - 4:00 PM",
+    "sunday": "Domingo: Cerrado",
+    "sendMessage": "Envíenos un Mensaje",
+    "yourName": "Su Nombre",
+    "emailAddress": "Dirección de Correo Electrónico",
+    "phoneNumber": "Número de Teléfono",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje",
+    "mapLocation": "Ubicación del Mapa"
+  },
+  "footer": {
+    "description": "Su socio de confianza para todas las necesidades automotrices. Servicio de calidad, mecánicos expertos y reparaciones confiables.",
+    "quickLinks": "Enlaces Rápidos",
+    "contactInfo": "Información de Contacto",
+    "rights": "Todos los derechos reservados."
+  },
+  "seo": {
+    "homeTitle": "MV Automotive - Reparación Profesional de Autos y Servicio Automotriz",
+    "homeDescription": "MV Automotive ofrece servicios expertos de reparación de autos, mantenimiento y servicios automotrices. Mecánicos de confianza con años de experiencia. ¡Programe su servicio hoy!",
+    "servicesTitle": "Nuestros Servicios - MV Automotive",
+    "servicesDescription": "Servicios automotrices integrales que incluyen reparación de motor, servicio de frenos, cambios de aceite, servicio de transmisión y más. Mecánicos expertos en MV Automotive.",
+    "aboutTitle": "Acerca de Nosotros - MV Automotive",
+    "aboutDescription": "Conozca MV Automotive - un taller de reparación de autos de confianza con más de 20 años de experiencia. Mecánicos expertos comprometidos con el servicio de calidad y la satisfacción del cliente.",
+    "contactTitle": "Contáctenos - MV Automotive",
+    "contactDescription": "Contacte a MV Automotive para servicios de reparación de autos. Llámenos al (903) 917-1354 o visítenos en 1723 Peters Rd 443, Irving, TX 75061. ¡Programe su cita hoy!"
+  }
+}
+

@@ -1,0 +1,196 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Expert Car Repair Services",
+    "subtitle": "Trusted mechanics providing quality automotive care for over 20 years",
+    "scheduleService": "Schedule Service",
+    "ourServices": "Our Services",
+    "whyChoose": "Why Choose MV Automotive?",
+    "allMakes": "All Makes & Models",
+    "allMakesDesc": "We service all vehicle types, from domestic to imported cars",
+    "expertTech": "Expert Technicians",
+    "expertTechDesc": "Certified mechanics with years of experience and training",
+    "fastService": "Fast Service",
+    "fastServiceDesc": "Quick turnaround times without compromising on quality",
+    "qualityGuarantee": "Quality Guarantee",
+    "qualityGuaranteeDesc": "We stand behind our work with comprehensive warranties",
+    "ourServicesTitle": "Our Services",
+    "engineRepair": "Engine Repair",
+    "engineRepairDesc": "Complete engine diagnostics, repairs, and maintenance to keep your vehicle running smoothly.",
+    "brakeService": "Brake Service",
+    "brakeServiceDesc": "Professional brake inspection, repair, and replacement for your safety on the road.",
+    "oilChanges": "Oil Changes",
+    "oilChangesDesc": "Regular oil changes to extend your engine's life and improve performance.",
+    "viewAllServices": "View All Services",
+    "readyToSchedule": "Ready to Schedule Your Service?",
+    "contactToday": "Contact us today for a free estimate",
+    "getStarted": "Get Started"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive automotive repair and maintenance for all makes and models",
+    "engineRepair": {
+      "title": "Engine Repair & Diagnostics",
+      "description": "Comprehensive engine diagnostics and repair services to keep your vehicle running at peak performance.",
+      "features": [
+        "Engine diagnostics",
+        "Timing belt replacement",
+        "Head gasket repair",
+        "Engine rebuilds",
+        "Cooling system service"
+      ]
+    },
+    "brakeService": {
+      "title": "Brake Service & Repair",
+      "description": "Professional brake inspection, repair, and replacement to ensure your safety on the road.",
+      "features": [
+        "Brake pad replacement",
+        "Rotor resurfacing",
+        "Brake fluid flush",
+        "Caliper repair",
+        "ABS system service"
+      ]
+    },
+    "oilChanges": {
+      "title": "Oil Changes & Fluid Services",
+      "description": "Regular maintenance services to extend your vehicle's life and improve performance.",
+      "features": [
+        "Conventional & synthetic oil changes",
+        "Transmission fluid service",
+        "Coolant flush",
+        "Power steering fluid",
+        "Differential service"
+      ]
+    },
+    "transmission": {
+      "title": "Transmission Service",
+      "description": "Expert transmission repair and maintenance for smooth shifting and reliable performance.",
+      "features": [
+        "Transmission rebuild",
+        "Fluid change & flush",
+        "Clutch replacement",
+        "Transmission diagnostics",
+        "CVT service"
+      ]
+    },
+    "suspension": {
+      "title": "Suspension & Steering",
+      "description": "Complete suspension and steering system services for a smooth and safe ride.",
+      "features": [
+        "Shock & strut replacement",
+        "Alignment service",
+        "Tie rod replacement",
+        "Ball joint service",
+        "Steering rack repair"
+      ]
+    },
+    "acHeating": {
+      "title": "AC & Heating Service",
+      "description": "Keep your vehicle comfortable year-round with our climate control services.",
+      "features": [
+        "AC recharge",
+        "Compressor repair",
+        "Heater core service",
+        "HVAC diagnostics",
+        "Refrigerant leak repair"
+      ]
+    },
+    "electrical": {
+      "title": "Electrical System Repair",
+      "description": "Expert electrical diagnostics and repair for all your vehicle's electrical needs.",
+      "features": [
+        "Battery replacement",
+        "Alternator service",
+        "Starter repair",
+        "Wiring diagnostics",
+        "Fuse & relay service"
+      ]
+    },
+    "tireService": {
+      "title": "Tire Service",
+      "description": "Complete tire services including installation, rotation, and balancing.",
+      "features": [
+        "Tire installation",
+        "Tire rotation",
+        "Wheel balancing",
+        "Tire repair",
+        "TPMS service"
+      ]
+    }
+  },
+  "about": {
+    "title": "About MV Automotive",
+    "subtitle": "Your trusted partner in automotive care in Irving, Texas since 2003",
+    "ourStory": "Our Story",
+    "story1": "Founded in 2003, MV Automotive has been serving the Irving, Texas community with dedication and excellence for over 20 years. Owned and operated by Mario Buenrostro, what started as a small family-owned shop has grown into a trusted automotive service center known for quality workmanship and honest service.",
+    "owner": "Owner",
+    "ownerName": "Mario Buenrostro",
+    "story2": "Our commitment to customer satisfaction and technical expertise has made us the go-to choice for thousands of vehicle owners. We believe in building lasting relationships with our customers through transparent communication, fair pricing, and reliable service.",
+    "story3": "At MV Automotive, we don't just fix cars—we care for them. Every vehicle that comes through our doors receives the same attention to detail and quality service, whether it's a routine oil change or a complex engine repair.",
+    "ourValues": "Our Values",
+    "qualityWork": "Quality Work",
+    "qualityWorkDesc": "We use only the highest quality parts and follow manufacturer specifications for every repair.",
+    "experience": "Experience",
+    "experienceDesc": "Over 20 years of combined experience with continuous training on the latest automotive technology.",
+    "excellence": "Excellence",
+    "excellenceDesc": "We strive for excellence in every aspect of our service, from diagnostics to customer communication.",
+    "customerFirst": "Customer First",
+    "customerFirstDesc": "Your satisfaction is our priority. We listen, communicate clearly, and always do what's right.",
+    "whyChoose": "Why Choose MV Automotive?",
+    "certifiedTech": "✓ Certified Technicians",
+    "certifiedTechDesc": "All our mechanics are ASE certified and continuously trained on the latest automotive technology.",
+    "warranty": "✓ Warranty on All Work",
+    "warrantyDesc": "We stand behind our work with comprehensive warranties on parts and labor.",
+    "competitivePricing": "✓ Competitive Pricing",
+    "competitivePricingDesc": "Fair, transparent pricing with no hidden fees. We provide detailed estimates before any work begins.",
+    "modernEquipment": "✓ Modern Equipment",
+    "modernEquipmentDesc": "State-of-the-art diagnostic equipment to accurately identify and fix issues quickly.",
+    "convenientLocation": "✓ Convenient Location",
+    "convenientLocationDesc": "Easy access with ample parking and comfortable waiting area with free WiFi.",
+    "allMakes": "✓ All Makes & Models",
+    "allMakesDesc": "We service all vehicle types, from domestic to imported, classic to modern."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team today",
+    "getInTouch": "Get In Touch",
+    "phone": "Phone",
+    "phoneHours": "Mon-Fri: 8am-6pm",
+    "email": "Email",
+    "emailResponse": "We'll respond within 24 hours",
+    "address": "Address",
+    "businessHours": "Business Hours",
+    "mondayFriday": "Monday - Friday: 8:00 AM - 6:00 PM",
+    "saturday": "Saturday: 9:00 AM - 4:00 PM",
+    "sunday": "Sunday: Closed",
+    "sendMessage": "Send Us a Message",
+    "yourName": "Your Name",
+    "emailAddress": "Email Address",
+    "phoneNumber": "Phone Number",
+    "message": "Message",
+    "send": "Send Message",
+    "mapLocation": "Map Location"
+  },
+  "footer": {
+    "description": "Your trusted partner for all automotive needs. Quality service, expert mechanics, and reliable repairs.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "rights": "All rights reserved."
+  },
+  "seo": {
+    "homeTitle": "MV Automotive - Professional Car Repair & Auto Service",
+    "homeDescription": "MV Automotive offers expert car repair, maintenance, and automotive services. Trusted mechanics with years of experience. Schedule your service today!",
+    "servicesTitle": "Our Services - MV Automotive",
+    "servicesDescription": "Comprehensive automotive services including engine repair, brake service, oil changes, transmission service, and more. Expert mechanics at MV Automotive.",
+    "aboutTitle": "About Us - MV Automotive",
+    "aboutDescription": "Learn about MV Automotive - a trusted car repair shop with over 20 years of experience. Expert mechanics committed to quality service and customer satisfaction.",
+    "contactTitle": "Contact Us - MV Automotive",
+    "contactDescription": "Contact MV Automotive for car repair services. Call us at (903) 917-1354 or visit us at 1723 Peters Rd 443, Irving, TX 75061. Schedule your appointment today!"
+  }
+}
+
