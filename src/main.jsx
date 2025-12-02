@@ -56,7 +56,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <HelmetProvider>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <BrowserRouter>
+        <BrowserRouter basename="/MVAutomotive">
           <App />
         </BrowserRouter>
       </ThemeProvider>
