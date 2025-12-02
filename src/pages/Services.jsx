@@ -19,55 +19,55 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 const Services = () => {
   const { t, i18n } = useTranslation()
   const location = useLocation()
-  const baseUrl = typeof window !== 'undefined' ? window.location.origin : ''
+  const baseUrl = import.meta.env.BASE_URL
   const services = [
     {
       titleKey: 'services.engineRepair.title',
       descriptionKey: 'services.engineRepair.description',
       featuresKey: 'services.engineRepair.features',
-      image: '/five.jpg',
+      image: `${baseUrl}five.jpg`,
     },
     {
       titleKey: 'services.brakeService.title',
       descriptionKey: 'services.brakeService.description',
       featuresKey: 'services.brakeService.features',
-      image: '/six.jpg',
+      image: `${baseUrl}six.jpg`,
     },
     {
       titleKey: 'services.oilChanges.title',
       descriptionKey: 'services.oilChanges.description',
       featuresKey: 'services.oilChanges.features',
-      image: '/seven.jpg',
+      image: `${baseUrl}seven.jpg`,
     },
     {
       titleKey: 'services.transmission.title',
       descriptionKey: 'services.transmission.description',
       featuresKey: 'services.transmission.features',
-      image: '/one.jpg',
+      image: `${baseUrl}one.jpg`,
     },
     {
       titleKey: 'services.suspension.title',
       descriptionKey: 'services.suspension.description',
       featuresKey: 'services.suspension.features',
-      image: '/two.jpg',
+      image: `${baseUrl}two.jpg`,
     },
     {
       titleKey: 'services.acHeating.title',
       descriptionKey: 'services.acHeating.description',
       featuresKey: 'services.acHeating.features',
-      image: '/three.jpg',
+      image: `${baseUrl}three.jpg`,
     },
     {
       titleKey: 'services.electrical.title',
       descriptionKey: 'services.electrical.description',
       featuresKey: 'services.electrical.features',
-      image: '/four.jpg',
+      image: `${baseUrl}four.jpg`,
     },
     {
       titleKey: 'services.tireService.title',
       descriptionKey: 'services.tireService.description',
       featuresKey: 'services.tireService.features',
-      image: '/five.jpg',
+      image: `${baseUrl}five.jpg`,
     },
   ]
 

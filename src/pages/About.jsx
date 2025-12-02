@@ -56,7 +56,7 @@ const About = () => {
           <Grid item xs={12} md={6}>
             <Box
               component="img"
-              src="/six.jpg"
+              src={`${import.meta.env.BASE_URL}six.jpg`}
               alt="MV Automotive shop"
               sx={{
                 width: '100%',

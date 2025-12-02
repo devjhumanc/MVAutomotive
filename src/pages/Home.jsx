@@ -87,7 +87,7 @@ const Home = () => {
             <Grid item xs={12} md={6}>
               <Box
                 component="img"
-                src="/one.jpg"
+                src={`${import.meta.env.BASE_URL}one.jpg`}
                 alt="Professional car mechanic service"
                 sx={{
                   width: '100%',
@@ -166,7 +166,7 @@ const Home = () => {
                 <CardMedia
                   component="img"
                   height="200"
-                  image="/two.jpg"
+                  image={`${import.meta.env.BASE_URL}two.jpg`}
                   alt="Engine repair service"
                 />
                 <CardContent>
@@ -184,7 +184,7 @@ const Home = () => {
                 <CardMedia
                   component="img"
                   height="200"
-                  image="/three.jpg"
+                  image={`${import.meta.env.BASE_URL}three.jpg`}
                   alt="Brake service"
                 />
                 <CardContent>
@@ -202,7 +202,7 @@ const Home = () => {
                 <CardMedia
                   component="img"
                   height="200"
-                  image="/four.jpg"
+                  image={`${import.meta.env.BASE_URL}four.jpg`}
                   alt="Oil change service"
                 />
                 <CardContent>
