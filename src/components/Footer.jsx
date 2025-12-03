@@ -70,7 +70,7 @@ const Footer = () => {
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                 <EmailIcon fontSize="small" />
-                <Typography variant="body2">info@mvautomotive.com</Typography>
+                <Typography variant="body2">marioescobedo1983@gmail.com</Typography>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'start', gap: 1 }}>
                 <LocationOnIcon fontSize="small" sx={{ mt: 0.5 }} />

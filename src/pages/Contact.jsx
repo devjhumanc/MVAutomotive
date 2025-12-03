@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router-dom'
@@ -7,8 +6,6 @@ import {
   Typography,
   Grid,
   Box,
-  TextField,
-  Button,
   Paper,
   Card,
   CardContent,
@@ -22,28 +19,6 @@ const Contact = () => {
   const { t, i18n } = useTranslation()
   const location = useLocation()
   const baseUrl = typeof window !== 'undefined' ? window.location.origin : ''
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-  })
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    })
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // In a real application, this would send the form data to a backend
-    alert(i18n.language === 'es' 
-      ? '¡Gracias por su mensaje! Nos pondremos en contacto pronto.'
-      : 'Thank you for your message! We will get back to you soon.')
-    setFormData({ name: '', email: '', phone: '', message: '' })
-  }
 
   return (
     <>
@@ -78,7 +53,7 @@ const Contact = () => {
       <Container maxWidth="lg" sx={{ py: 8 }}>
         <Grid container spacing={4}>
           {/* Contact Information */}
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={6}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 700, mb: 3 }}>
               {t('contact.getInTouch')}
             </Typography>
@@ -111,7 +86,7 @@ const Contact = () => {
                         {t('contact.email')}
                       </Typography>
                       <Typography variant="body1" color="text.secondary">
-                        info@mvautomotive.com
+                        marioescobedo1983@gmail.com
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
                         {t('contact.emailResponse')}
@@ -164,96 +139,26 @@ const Contact = () => {
             </Box>
           </Grid>
 
-          {/* Contact Form */}
-          <Grid item xs={12} md={8}>
-            <Paper elevation={3} sx={{ p: 4 }}>
-              <Typography variant="h5" gutterBottom sx={{ fontWeight: 700, mb: 3 }}>
-                {t('contact.sendMessage')}
-              </Typography>
-              <form onSubmit={handleSubmit}>
-                <Grid container spacing={3}>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      fullWidth
-                      label={t('contact.yourName')}
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      variant="outlined"
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      fullWidth
-                      label={t('contact.emailAddress')}
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      variant="outlined"
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <TextField
-                      fullWidth
-                      label={t('contact.phoneNumber')}
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      variant="outlined"
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <TextField
-                      fullWidth
-                      label={t('contact.message')}
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      multiline
-                      rows={6}
-                      variant="outlined"
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Button
-                      type="submit"
-                      variant="contained"
-                      size="large"
-                      fullWidth
-                      sx={{ py: 1.5 }}
-                    >
-                      {t('contact.send')}
-                    </Button>
-                  </Grid>
-                </Grid>
-              </form>
+          {/* Google Maps Embed */}
+          <Grid item xs={12} md={6}>
+            <Paper elevation={3} sx={{ overflow: 'hidden', borderRadius: 2 }}>
+              <Box
+                component="iframe"
+                src="https://www.google.com/maps?q=1723+Peters+Rd+443,+Irving,+TX+75061&output=embed"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                sx={{
+                  display: 'block',
+                  width: '100%',
+                  minHeight: 450,
+                }}
+                title={t('contact.mapLocation')}
+              />
             </Paper>
-
-            {/* Google Maps Embed */}
-            <Box sx={{ mt: 4 }}>
-              <Paper elevation={3} sx={{ overflow: 'hidden', borderRadius: 2 }}>
-                <Box
-                  component="iframe"
-                  src="https://www.google.com/maps?q=1723+Peters+Rd+443,+Irving,+TX+75061&output=embed"
-                  width="100%"
-                  height="450"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  sx={{
-                    display: 'block',
-                    width: '100%',
-                    minHeight: 450,
-                  }}
-                  title={t('contact.mapLocation')}
-                />
-              </Paper>
-            </Box>
           </Grid>
         </Grid>
       </Container>
