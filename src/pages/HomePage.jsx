@@ -477,7 +477,21 @@ const HomePage = () => {
                 {t('contact.getInTouch')}
               </Typography>
               <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-                <Card elevation={2}>
+                <Card
+                  component="a"
+                  href="tel:+19039171354"
+                  elevation={2}
+                  sx={{
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease-in-out',
+                    '&:hover': {
+                      elevation: 4,
+                      transform: 'translateY(-2px)',
+                    },
+                  }}
+                >
                   <CardContent>
                     <Box sx={{ display: 'flex', alignItems: 'start', gap: 2 }}>
                       <PhoneIcon color="primary" sx={{ fontSize: 32 }} />
@@ -485,18 +499,9 @@ const HomePage = () => {
                         <Typography variant="h6" gutterBottom sx={{ fontWeight: 600 }}>
                           {t('contact.phone')}
                         </Typography>
-                        <MuiLink
-                          href="tel:+19039171354"
-                          sx={{
-                            textDecoration: 'none',
-                            color: 'primary.main',
-                            '&:hover': { textDecoration: 'underline' },
-                          }}
-                        >
-                          <Typography variant="body1" color="text.secondary">
-                            (903) 917-1354
-                          </Typography>
-                        </MuiLink>
+                        <Typography variant="body1" color="text.secondary">
+                          (903) 917-1354
+                        </Typography>
                         <Typography variant="body2" color="text.secondary">
                           {t('contact.phoneHours')}
                         </Typography>
@@ -505,7 +510,21 @@ const HomePage = () => {
                   </CardContent>
                 </Card>
 
-                <Card elevation={2}>
+                <Card
+                  component="a"
+                  href="mailto:marioescobedo1983@gmail.com"
+                  elevation={2}
+                  sx={{
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease-in-out',
+                    '&:hover': {
+                      elevation: 4,
+                      transform: 'translateY(-2px)',
+                    },
+                  }}
+                >
                   <CardContent>
                     <Box sx={{ display: 'flex', alignItems: 'start', gap: 2 }}>
                       <EmailIcon color="primary" sx={{ fontSize: 32 }} />
@@ -513,18 +532,9 @@ const HomePage = () => {
                         <Typography variant="h6" gutterBottom sx={{ fontWeight: 600 }}>
                           {t('contact.email')}
                         </Typography>
-                        <MuiLink
-                          href="mailto:marioescobedo1983@gmail.com"
-                          sx={{
-                            textDecoration: 'none',
-                            color: 'primary.main',
-                            '&:hover': { textDecoration: 'underline' },
-                          }}
-                        >
-                          <Typography variant="body1" color="text.secondary">
-                            marioescobedo1983@gmail.com
-                          </Typography>
-                        </MuiLink>
+                        <Typography variant="body1" color="text.secondary">
+                          marioescobedo1983@gmail.com
+                        </Typography>
                         <Typography variant="body2" color="text.secondary">
                           {t('contact.emailResponse')}
                         </Typography>
@@ -533,7 +543,23 @@ const HomePage = () => {
                   </CardContent>
                 </Card>
 
-                <Card elevation={2}>
+                <Card
+                  component="a"
+                  href="https://www.google.com/maps/search/?api=1&query=1723+Peters+Rd+443,+Irving,+TX+75061"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  elevation={2}
+                  sx={{
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease-in-out',
+                    '&:hover': {
+                      elevation: 4,
+                      transform: 'translateY(-2px)',
+                    },
+                  }}
+                >
                   <CardContent>
                     <Box sx={{ display: 'flex', alignItems: 'start', gap: 2 }}>
                       <LocationOnIcon color="primary" sx={{ fontSize: 32 }} />
@@ -541,23 +567,12 @@ const HomePage = () => {
                         <Typography variant="h6" gutterBottom sx={{ fontWeight: 600 }}>
                           {t('contact.address')}
                         </Typography>
-                        <MuiLink
-                          href="https://www.google.com/maps/search/?api=1&query=1723+Peters+Rd+443,+Irving,+TX+75061"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          sx={{
-                            textDecoration: 'none',
-                            color: 'primary.main',
-                            '&:hover': { textDecoration: 'underline' },
-                          }}
-                        >
-                          <Typography variant="body1" color="text.secondary">
-                            1723 Peters Rd 443
-                          </Typography>
-                          <Typography variant="body1" color="text.secondary">
-                            Irving, TX 75061
-                          </Typography>
-                        </MuiLink>
+                        <Typography variant="body1" color="text.secondary">
+                          1723 Peters Rd 443
+                        </Typography>
+                        <Typography variant="body1" color="text.secondary">
+                          Irving, TX 75061
+                        </Typography>
                       </Box>
                     </Box>
                   </CardContent>
