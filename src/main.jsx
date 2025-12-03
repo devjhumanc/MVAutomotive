@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
@@ -56,9 +55,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <HelmetProvider>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <BrowserRouter basename="/MVAutomotive">
-          <App />
-        </BrowserRouter>
+        <App />
       </ThemeProvider>
     </HelmetProvider>
   </React.StrictMode>,

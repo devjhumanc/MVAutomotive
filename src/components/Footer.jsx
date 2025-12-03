@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Box, Container, Grid, Typography, Link, IconButton } from '@mui/material'
+import { Box, Container, Grid, Typography, Link as MuiLink, IconButton } from '@mui/material'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import TwitterIcon from '@mui/icons-material/Twitter'
@@ -45,18 +45,54 @@ const Footer = () => {
               {t('footer.quickLinks')}
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-              <Link href="/" color="inherit" underline="hover">
+              <MuiLink
+                component="button"
+                onClick={() => {
+                  const element = document.getElementById('home')
+                  if (element) element.scrollIntoView({ behavior: 'smooth' })
+                }}
+                color="inherit"
+                underline="hover"
+                sx={{ textAlign: 'left', border: 'none', background: 'none', cursor: 'pointer' }}
+              >
                 {t('nav.home')}
-              </Link>
-              <Link href="/services" color="inherit" underline="hover">
+              </MuiLink>
+              <MuiLink
+                component="button"
+                onClick={() => {
+                  const element = document.getElementById('services')
+                  if (element) element.scrollIntoView({ behavior: 'smooth' })
+                }}
+                color="inherit"
+                underline="hover"
+                sx={{ textAlign: 'left', border: 'none', background: 'none', cursor: 'pointer' }}
+              >
                 {t('nav.services')}
-              </Link>
-              <Link href="/about" color="inherit" underline="hover">
+              </MuiLink>
+              <MuiLink
+                component="button"
+                onClick={() => {
+                  const element = document.getElementById('about')
+                  if (element) element.scrollIntoView({ behavior: 'smooth' })
+                }}
+                color="inherit"
+                underline="hover"
+                sx={{ textAlign: 'left', border: 'none', background: 'none', cursor: 'pointer' }}
+              >
                 {t('nav.about')}
-              </Link>
-              <Link href="/contact" color="inherit" underline="hover">
+              </MuiLink>
+              <MuiLink
+                component="button"
+                onClick={() => {
+                  const element = document.getElementById('contact')
+                  if (element) element.scrollIntoView({ behavior: 'smooth' })
+                }}
+                color="inherit"
+                underline="hover"
+                sx={{ textAlign: 'left', border: 'none', background: 'none', cursor: 'pointer' }}
+              >
                 {t('nav.contact')}
-              </Link>
+              </MuiLink>
             </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
@@ -66,18 +102,30 @@ const Footer = () => {
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                 <PhoneIcon fontSize="small" />
-                <Typography variant="body2">(903) 917-1354</Typography>
+                <MuiLink href="tel:+19039171354" color="inherit" underline="hover">
+                  <Typography variant="body2">(903) 917-1354</Typography>
+                </MuiLink>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                 <EmailIcon fontSize="small" />
-                <Typography variant="body2">marioescobedo1983@gmail.com</Typography>
+                <MuiLink href="mailto:marioescobedo1983@gmail.com" color="inherit" underline="hover">
+                  <Typography variant="body2">marioescobedo1983@gmail.com</Typography>
+                </MuiLink>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'start', gap: 1 }}>
                 <LocationOnIcon fontSize="small" sx={{ mt: 0.5 }} />
-                <Typography variant="body2">
-                  1723 Peters Rd 443<br />
-                  Irving, TX 75061
-                </Typography>
+                <MuiLink
+                  href="https://www.google.com/maps/search/?api=1&query=1723+Peters+Rd+443,+Irving,+TX+75061"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  color="inherit"
+                  underline="hover"
+                >
+                  <Typography variant="body2">
+                    1723 Peters Rd 443<br />
+                    Irving, TX 75061
+                  </Typography>
+                </MuiLink>
               </Box>
             </Box>
           </Grid>

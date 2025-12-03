@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import {
   AppBar,
@@ -31,7 +30,7 @@ import Footer from './Footer'
 const Layout = ({ children }) => {
   const { t, i18n } = useTranslation()
   const [mobileOpen, setMobileOpen] = useState(false)
-  const location = useLocation()
+  const [activeSection, setActiveSection] = useState('home')
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('md'))
 
@@ -50,12 +49,42 @@ const Layout = ({ children }) => {
     return i18n.language === 'en' ? 'Español' : 'English'
   }
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      setActiveSection(id)
+      if (isMobile) {
+        setMobileOpen(false)
+      }
+    }
+  }
+
   const navItems = [
-    { label: t('nav.home'), path: '/', icon: HomeIcon },
-    { label: t('nav.services'), path: '/services', icon: HandymanIcon },
-    { label: t('nav.about'), path: '/about', icon: InfoIcon },
-    { label: t('nav.contact'), path: '/contact', icon: ContactMailIcon },
+    { label: t('nav.home'), section: 'home', icon: HomeIcon },
+    { label: t('nav.services'), section: 'services', icon: HandymanIcon },
+    { label: t('nav.about'), section: 'about', icon: InfoIcon },
+    { label: t('nav.contact'), section: 'contact', icon: ContactMailIcon },
   ]
+
+  // Update active section on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['home', 'services', 'about', 'contact']
+      const scrollPosition = window.scrollY + 100
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sections[i])
+        if (section && section.offsetTop <= scrollPosition) {
+          setActiveSection(sections[i])
+          break
+        }
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const drawer = (
     <Box sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
@@ -91,13 +120,12 @@ const Layout = ({ children }) => {
       <List sx={{ flexGrow: 1, pt: 2 }}>
         {navItems.map((item) => {
           const Icon = item.icon
-          const isActive = location.pathname === item.path
+          const isActive = activeSection === item.section
           return (
             <ListItem
-              key={item.path}
-              component={Link}
-              to={item.path}
-              onClick={handleDrawerToggle}
+              key={item.section}
+              button
+              onClick={() => scrollToSection(item.section)}
               sx={{
                 mx: 1,
                 mb: 0.5,
@@ -170,14 +198,19 @@ const Layout = ({ children }) => {
           <BuildIcon sx={{ mr: 2, fontSize: 32 }} />
           <Typography
             variant="h6"
-            component={Link}
-            to="/"
+            component="button"
+            onClick={() => scrollToSection('home')}
             sx={{
               flexGrow: { xs: 1, md: 0 },
               fontWeight: 700,
               textDecoration: 'none',
               color: 'inherit',
               mr: { md: 4 },
+              border: 'none',
+              background: 'none',
+              cursor: 'pointer',
+              fontFamily: 'inherit',
+              fontSize: 'inherit',
             }}
           >
             MV Automotive
@@ -204,12 +237,11 @@ const Layout = ({ children }) => {
             <Box sx={{ display: 'flex', gap: 2, ml: 'auto', alignItems: 'center' }}>
               {navItems.map((item) => (
                 <Button
-                  key={item.path}
-                  component={Link}
-                  to={item.path}
+                  key={item.section}
+                  onClick={() => scrollToSection(item.section)}
                   color="inherit"
                   sx={{
-                    backgroundColor: location.pathname === item.path ? 'rgba(255,255,255,0.1)' : 'transparent',
+                    backgroundColor: activeSection === item.section ? 'rgba(255,255,255,0.1)' : 'transparent',
                     '&:hover': {
                       backgroundColor: 'rgba(255,255,255,0.1)',
                     },
